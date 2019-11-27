@@ -6,6 +6,7 @@ import {
 import React from "react"
 import Movie from "./Movie";
 import Cinema from "./Cinema";
+import My from "./My";
 export default class Index extends React.Component{
     render(){
         return (
@@ -18,6 +19,7 @@ export default class Index extends React.Component{
 				<Switch>
 					<Route path={"/"} exact component={Movie}></Route>
 					<Route path={"/cinema"} component={Cinema}></Route>
+					<Route path={"/my"} component={My}></Route>
 				</Switch>
 			</div>
         )

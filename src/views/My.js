@@ -1,6 +1,6 @@
 import React,{Component} from "react"
 export default class My extends Component{
-	componentWillMount(){
+	UNSAFE_componentWillMount(){
 		if(!localStorage.user)
 		this.props.history.push("/login")
 	}
