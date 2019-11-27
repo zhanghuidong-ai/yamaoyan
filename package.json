@@ -18,6 +18,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
+  "proxy":"http://m.maoyan.com",
   "eslintConfig": {
     "extends": "react-app"
   },
