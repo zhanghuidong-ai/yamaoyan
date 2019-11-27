@@ -1,12 +1,19 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+import store from './store';
+import {addGoods} from "./store/actionCreator/goods";
+import {joinCar} from "./store/actionCreator/car";
 
-ReactDOM.render(<App />, document.getElementById('root'));
+let state = store.getState();
+store.dispatch(addGoods({
+    id:state.goods.length+1,
+    goodsName:"葡萄",
+    goodsDetail:"葡萄美酒夜光杯",
+    goodsPrice:90,
+    goodsStore:12,
+    createTime:Date.now()-9878657
+}))
+state = store.getState();
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+store.dispatch(joinCar(state.goods.find(v=>v.id===1)));
+store.dispatch(joinCar(state.goods.find(v=>v.id===1)));
+console.log(store.getState())
+
