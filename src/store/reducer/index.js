@@ -1,8 +1,10 @@
-import {combineReducers} from "redux";
-import goods from "./goods";
-import car from './car'
-const rootReducer = combineReducers({
-    goods,
-    car
-})
-export default rootReducer;
+import login from "./login";
+// import register from "./register";
+import {
+    combineReducers
+} from "redux";
+
+export default combineReducers({
+    login,
+	// register
+});

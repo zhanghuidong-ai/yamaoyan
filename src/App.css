@@ -1,3 +1,5 @@
+*{box-sizing:border-box;}
+
 .App {
   text-align: center;
 }
@@ -17,6 +19,20 @@
   color: white;
 }
 
+nav{
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom:0px;
+	height:30px;
+	border:1px solid red
+}
+
 .App-link {
   color: #09d3ac;
+}
+.App-active{
+	color:#f03d37
 }
