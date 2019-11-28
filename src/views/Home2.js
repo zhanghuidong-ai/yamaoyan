@@ -7,7 +7,15 @@ import React from "react"
 import Login from "./Login";
 import Header from "../components/Header";
 import PhoneLogin from "./PhoneLogin";
-export default class Index extends React.Component{
+import {connect} from "react-redux"
+import Home2ACTION from "../store/actionCreator/home2Action"
+import {
+    bindActionCreators
+} from "redux";
+class Index extends React.Component{
+	componentDidMount(){
+		this.props.changeget()
+	}
     render(){
         return (
 			<div>
@@ -15,9 +23,9 @@ export default class Index extends React.Component{
 					<div>猫眼电影</div>
 				</Header>
 				<nav className={"taba"}>
-					<Link to={"/home2"}  onClick={()=>{this.refs.bottom_left.style.left="20px"}}>美团账号登录</Link>
-					<Link to={"/home2/PhoneLogin"} onClick={()=>{this.refs.bottom_left.style.left="175px"}}>手机验证登录</Link>
-					<div className="slide" ref="bottom_left" style={{left: "20px"}}></div>
+					<Link to={"/home2"}>美团账号登录</Link>
+					<Link to={"/home2/PhoneLogin"}>手机验证登录</Link>
+					<div className="slide" ref="bottom_left" style={{left:this.props.isgoback?"20px":"175px"}}></div>
 				</nav>	
 				<Switch>
 					<Route path={"/home2"} exact component={Login}></Route>
@@ -27,3 +35,14 @@ export default class Index extends React.Component{
         )
     }	
 }
+function mapStateToProps(state){
+	return {
+		isgoback:state.login.isgoback,
+		islogin:state.login.islogin,
+		isget:state.login.isget
+	}
+}
+function mapDispatchToProps(dispatch){
+	return bindActionCreators(Home2ACTION,dispatch)
+}
+export default connect(mapStateToProps,mapDispatchToProps)(Index)

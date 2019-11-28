@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import '../node_modules/antd/dist/antd.css';
 import App from './App';
 import "./assets/style/css/reset.css"
 import "./assets/font_icon/iconfont.css"
@@ -9,7 +10,6 @@ import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router} from "react-router-dom"
 import {Provider} from "react-redux"
 import store from "./store"
-import 'lib-flexible'
 
 ReactDOM.render(<Provider store={store}><Router><App /></Router></Provider>, document.getElementById('root'));
 
