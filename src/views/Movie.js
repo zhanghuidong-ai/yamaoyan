@@ -1,15 +1,17 @@
-import React,{Component} from "react"
+import React,{Component,Fragment} from "react"
 import Download_app_bar from '../components/Download_app_bar'
 import Topbar from '../components/Topbar'
+import The_MovieList from '../components/The_MovieList'
+
 export default class Movies extends Component{
 	render(){
 		return (
-			<div>
+			<Fragment>
 				<div>电影</div>
 				<Download_app_bar></Download_app_bar>
 				<Topbar></Topbar>
-
-			</div>
+				<The_MovieList></The_MovieList>
+			</Fragment>
 		)
 	}
 }

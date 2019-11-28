@@ -3,12 +3,13 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import './assets/reset.css'
 import App from './App';
+import axios from 'axios'
 import 'lib-flexible'
 import * as serviceWorker from './serviceWorker';
 import {BrowserRouter as Router} from "react-router-dom"
 import {Provider} from "react-redux"
 import store from "./store"
-
+ React.Component.prototype.$axios=axios
 ReactDOM.render(<Provider store={store}><Router><App /></Router></Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change

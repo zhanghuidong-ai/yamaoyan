@@ -21,7 +21,7 @@ class Topbar extends React.Component{
                 
                     <NavLink activeClassName='activeRed' className={'li'} exact to={"/"}>正在热映</NavLink>
                     <NavLink activeClassName='activeRed' className={'li'} to={'/.f-hot'}>即将上映</NavLink>
-                  
+                    
                     {/* <Route></Route>
                     <Route></Route> */}
                     </Router>

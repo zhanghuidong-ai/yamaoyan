@@ -1,0 +1,92 @@
+.page-wrap{
+    width: 750px;
+    
+}
+.page-item-wrap{
+    height: 228px;
+    width: 100%;
+    display: flex;
+    padding:24px;
+    color:#666;
+    text-align: left;
+    font-size: 26px;
+}
+.default-img-bg{
+    height: 100%;
+    margin-right: 30px;
+}
+.default-img-bg img{
+    height: 100%;
+}
+.content{
+    height: 176px;
+    width: 660px;
+    padding-bottom: 200px;
+    border-bottom:1px solid #b0b0b0;
+    display: flex;
+    position: relative;
+}
+.content .m-left{
+   width: 100%;
+}
+
+.m-title{
+    font:#333;
+    font-size:34px ;
+    font-weight: 900;
+    padding-right: 10px;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.score-suffix{
+    font-size: 26px;
+}
+.grade{
+    font-size: 30px;
+    font-weight: 700;
+    color: #faaf00;
+}
+.actor{
+    margin-top:10px;
+}
+.show-info{
+    margin-top:10px;
+}
+.line-ellipsis{
+    width: 380px;
+    overflow:hidden; 
+    text-overflow:ellipsis;
+    white-space: nowrap;
+}
+.buy-ticket{
+    width: 94px;
+    height: 54px;
+    font-size:24px ;
+    line-height: 56px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #f03d37;
+    color: #fff;
+    border-radius: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 40%;
+}
+.pre-buy-ticket{
+    width: 94px;
+    height: 54px;
+    font-size:24px ;
+    line-height: 56px;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #3c9fe6;
+    color: #fff;
+    border-radius: 8px;
+    white-space: nowrap;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    bottom: 40%;
+}
