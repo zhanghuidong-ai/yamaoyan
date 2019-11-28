@@ -1,0 +1,39 @@
+.navbar {
+    height: 101px;
+    color: #fff;
+    background: #df2d2d;
+    border-bottom: 1px solid #bc1d1d;
+    position: relative;
+	display: flex;
+}
+.navbar .nav-wrap-left {
+    height: 101px;
+    line-height: 101px;
+	width:105px;
+}
+.nav-wrap-left a.back {
+    height: 101px;
+    width: 45px;
+	font-size:20px;
+    line-height: 20px;
+    padding: 30px;
+}
+a.react, label.react {
+    display: block;
+    color: inherit;
+    height: 100%;
+    overflow-x: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.navbar h1.nav-header{
+    flex: 1;
+    font-size: 36px;
+    font-weight: lighter;
+    text-align: center;
+    line-height: 101px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
