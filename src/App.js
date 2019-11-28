@@ -6,7 +6,7 @@ import Home from "./views/Home"
 // import My from "./views/My";
 import Login from "./views/Login";
 // import Cinema from "./views/Cinema";
-
+// 123123123
 function App() {
   return (
     <div className="App">	
