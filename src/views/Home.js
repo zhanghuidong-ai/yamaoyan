@@ -6,7 +6,8 @@ import {
 import React from "react"
 import Movie from "./Movie";
 import Cinema from "./Cinema";
-import My from "./My";
+import My from "./My/container";
+
 export default class Index extends React.Component{
     render(){
         return (

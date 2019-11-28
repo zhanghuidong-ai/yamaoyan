@@ -1,0 +1,151 @@
+.body, body, html {
+    height: 100%;
+}
+body {
+    background-color: #f3f3f3;
+}
+body {
+    overflow: hidden;
+}
+.nav-header{
+    font-size: 36px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 100px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 0!important;
+    color:rgb(255, 255, 255);
+    background: #e54847;
+}
+.header{
+    background-color: #f03d37;
+    background-image: url(http://s0.meituan.net/bs/file/?f=myfe/canary:static/deploy/dpmmweb/client/dpmmweb/component/mycenter/img/bg.png);
+    background-repeat: no-repeat;
+    background-position: 50%;
+    background-size: 100% 300px;
+    height: 300px;
+    overflow: hidden;
+    text-align: center
+}
+.header img{
+    display: inline-block;
+    margin-top: 60px;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+    border: 6px solid #fff
+}
+.group {
+    margin-top: 20px;
+    background: #fff;
+}
+.group .orders {
+    padding: 0 30px;
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    width: 750px;
+    height: 298px;
+}
+.title-line {
+    position: absolute;
+    top: 46px;
+    left: 50%;
+    margin-left: -160px;
+    width: 320px;
+    height: 2px;
+    background: #ccc;
+}
+.group .title {
+    position: relative;
+    margin: 26px 0 0;
+    font-size: 30px;
+    line-height: 42px;
+    height: 42px;
+    color: #333;
+    z-index: 18;
+    display: inline-block;
+    width: 160px;
+    background-color: #fff;
+}
+.group .order-item {
+    width: 50%;
+    float: left;
+    height: 388px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 84px auto;
+    margin-top: 36px;
+}
+.group .orders .list .order-item.movie {
+    background-image: url(http://s0.meituan.net/bs/file/?f=myfe/canary:static/deploy/dpmmweb/client/dpmmweb/component/mycenter/img/movie.png);
+}
+.group .orders .list .order-item.store {
+    background-image: url(http://s0.meituan.net/bs/file/?f=myfe/canary:static/deploy/dpmmweb/client/dpmmweb/component/mycenter/img/store.png);
+}
+.group .list .order-item {
+    width: 50%;
+    float: left;
+    height: 194px;
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: 84px auto;
+    margin-top: 36px;
+}
+.group .list.list-two .order-item {
+    width: 50%;
+}
+.group .list .order-item a {
+    display: block;
+    height: 360px;
+}
+.group .list .order-item a p {
+    position: relative;
+    top: 106px;
+    text-align: center;
+    font-size: 30px;
+    line-height: 42px;
+    height: 84px;
+    margin: 0;
+    color: #333;
+}
+p {
+    display: block;
+    margin-block-start: 2em;
+    margin-block-end: 2em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+.group .item {
+    position: relative;
+    height: 88px;
+    line-height: 44px;
+    font-size: 30px;
+    margin-left: 30px;
+    padding-right: 30px;
+}
+.group .item a {
+    display: block;
+    color: #333;
+}
+.group .item span {
+    text-align: left;
+    float: left;
+}
+
+.item:after {
+    position: absolute;
+    right: 15px;
+    top: 18px;
+    display: inline-block;
+    content: "";
+    width: 16px;
+    height: 16px;
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+}
