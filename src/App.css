@@ -1,43 +1,6 @@
 .App {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.three_bot{
-	width:100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	position: fixed;
-	bottom:0px;
-	height:30px;
-	border:1px solid red
-}
-
-
-
-.App-link {
-  color: #09d3ac;
-}
-*{box-sizing:border-box;}
-
-.App {
-  text-align: center;
-}
 .nav{
   height:101px;
   color: #fff;
@@ -95,6 +58,27 @@
 .nav-icons .iconfont{
   font-size:50px;
 }
+
+
+.three_bot{
+	width:100%;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom:0px;
+	height:30px;
+	border:1px solid red
+}
+
+
+
+.App-link {
+  color: #09d3ac;
+}
+*{box-sizing:border-box;}
+
+
 .App-active{
 	color:#f03d37
 }
