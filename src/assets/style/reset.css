@@ -1,3 +1,4 @@
+*{box-sizing:border-box;}
 html,body,ul,ol,dl,li,dl,dt,input,h1,h2,h3,h4,h5,h6,figure,figcaption,p,form,fieldest,legend{margin:0;padding:0;}
 h1,h2,h3,h4,h5,h6{font-size: 14px;font-weight:500;}
 ul,ol,li{list-style:none;}
@@ -7,3 +8,8 @@ input{outline: none;}
 img{display: block;}
 a{text-decoration: none;}
 input,select{border:0;outline: none;}
+html,body{height:100%;background-color: #f8f8f8;}
+body{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    line-height: 1;
+    color: #333;}
