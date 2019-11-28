@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import {
 	NavLink,
 	Route,
@@ -24,4 +25,14 @@ export default class Index extends React.Component{
 			</div>
         )
     }	
+=======
+import React from "react"
+import BottomNav from "../components/BottomNav"
+export default class Home extends React.Component{
+    render(){
+        return (
+			<BottomNav></BottomNav>
+        )
+    }
+>>>>>>> bfd45ba719734c882ab02e14fa778ba14b49b336
 }

@@ -5,6 +5,10 @@
   "dependencies": {
     "axios": "^0.19.0",
     "lib-flexible": "^0.3.2",
+<<<<<<< HEAD
+=======
+    "node-sass": "^4.13.0",
+>>>>>>> bfd45ba719734c882ab02e14fa778ba14b49b336
     "postcss-px2rem": "^0.3.0",
     "react": "^16.12.0",
     "react-dom": "^16.12.0",
@@ -12,9 +16,16 @@
     "react-router-dom": "^5.1.2",
     "react-scripts": "3.2.0",
     "redux": "^4.0.4",
+<<<<<<< HEAD
     "redux-thunk": "^2.3.0"
   },
   "proxy": "http://m.maoyan.com",
+=======
+    "redux-thunk": "^2.3.0",
+    "sass-loader": "^8.0.0"
+  },
+  "proxy":"http://m.maoyan.com/",
+>>>>>>> bfd45ba719734c882ab02e14fa778ba14b49b336
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -35,9 +46,12 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+<<<<<<< HEAD
   },
   "devDependencies": {
     "node-sass": "^4.13.0",
     "sass-loader": "^8.0.0"
+=======
+>>>>>>> bfd45ba719734c882ab02e14fa778ba14b49b336
   }
 }

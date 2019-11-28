@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -33,6 +34,71 @@
 .App-link {
   color: #09d3ac;
 }
+=======
+*{box-sizing:border-box;}
+
+.App {
+  text-align: center;
+}
+.nav{
+  height:101px;
+  color: #fff;
+  background: #e54847;
+  border-bottom: 2px solid #e54847;
+  position: relative;
+}
+.nav_header h1{
+  display: block;
+  font-size: 36px;
+  font-weight: 400;
+  text-align: center;
+  line-height: 100px;
+  margin: 0;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.bottom-nav-bar{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: #fff;
+  border-top: 1px solid #d8d8d8;
+  display: flex;
+  justify-content: space-around;
+  padding-bottom: env(safe-area-inset-bottom);
+}
+.nav-icon-wrapper{
+    float: left;
+    width: 50px;
+    height:96px;
+    line-height: 96px;
+    box-sizing: border-box;
+    color: #696969;
+    position: relative;
+    text-align: center;
+    flex: 1;
+}
+.nav-icons{
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    margin:6px auto 0;
+}
+.nav-text{
+  line-height: 24px;
+  position: absolute;
+  top:60px;
+  left: 0;
+  right: 0;
+  font-size:20px;
+}
+.nav-icons .iconfont{
+  font-size:50px;
+}
+
+>>>>>>> bfd45ba719734c882ab02e14fa778ba14b49b336
 .App-active{
 	color:#f03d37
 }
