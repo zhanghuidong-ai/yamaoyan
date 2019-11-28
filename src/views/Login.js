@@ -2,7 +2,6 @@ import React,{Component} from "react"
 export default class My extends Component{
 	render(){
 		return (
-<<<<<<< HEAD
 			<div>
 				<form id="normal-login-form" action="//i.meituan.com/account/login"  autoComplete="off" method="post">
 					<dl className="list list-in"><dd className="visibale"><dl>
@@ -32,9 +31,4 @@ export default class My extends Component{
 		)
 	}
 }
-=======
-			<div>登录</div>
-		)
-	}
-}
->>>>>>> bfd45ba719734c882ab02e14fa778ba14b49b336
+

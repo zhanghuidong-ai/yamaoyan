@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 .App {
   text-align: center;
 }
@@ -34,7 +33,6 @@
 .App-link {
   color: #09d3ac;
 }
-=======
 *{box-sizing:border-box;}
 
 .App {
@@ -97,8 +95,6 @@
 .nav-icons .iconfont{
   font-size:50px;
 }
-
->>>>>>> bfd45ba719734c882ab02e14fa778ba14b49b336
 .App-active{
 	color:#f03d37
 }
