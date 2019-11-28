@@ -14,10 +14,6 @@ export default class Movie extends Component{
 				<Download_app_bar></Download_app_bar>
 				<Topbar></Topbar>
 			</Fragment>
-
-
-
-
 		)
 	}
 }

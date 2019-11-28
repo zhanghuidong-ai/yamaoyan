@@ -6,7 +6,6 @@ import "./assets/font_icon/iconfont.css"
 import App from './App';
 import 'lib-flexible'
 import * as serviceWorker from './serviceWorker';
-import {BrowserRouter as Router} from "react-router-dom"
 import {Provider} from "react-redux"
 import store from "./store"
 

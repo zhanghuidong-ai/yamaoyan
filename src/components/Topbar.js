@@ -11,6 +11,7 @@ class Topbar extends React.Component{
             <div>
             <div className='top-nav'>
 
+
                <div className="city-entry">
                    <span>北京</span>
                    <i className='city-entry-arrow'></i>
@@ -18,7 +19,6 @@ class Topbar extends React.Component{
                <ul className="swith-hot"
                >
                    <Router>
-
                     <NavLink activeClassName='activeRed' className={'li'} exact to={"/"}>正在热映</NavLink>
                     <NavLink activeClassName='activeRed' className={'li'} to={'/.f-hot'}>即将上映</NavLink>
 
@@ -27,7 +27,6 @@ class Topbar extends React.Component{
                     </Router>
                     <div className='activeLine'></div>
                </ul>
-
                <div className='search-entry'></div>
             </div >
             </div>
