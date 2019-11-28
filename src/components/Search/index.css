@@ -32,7 +32,7 @@
     font-size: 13px;
     color: #333;
     line-height: 20px;
-    width: calc(100% - 40px);
+    width: calc(100% - 100px);
     height:60px;
 }
 .del-input{
@@ -107,11 +107,12 @@
     padding: 18px 30px;
 }
 .list{
-    border-bottom: 2px solid #e6e6e6;
+    padding-left:28px;
+    border-top: 2px solid #e6e6e6;
 }
 .movie{
-    padding: 24px 0;
-    min-height: 180px;
+    margin: 16px 16px;
+    min-height: 200px;
 }
 .poster{
     background-color: #eee;
@@ -120,18 +121,18 @@
     float: left;
     margin: 0 20px;
 }
-.info{
+.result .movie .info{
     margin-right: 30px;
     margin-top: 1px;
 }
-.name-score{
+.movie .name-score{
     font-size: 32px;
     color: #222;
     display: flex;
     justify-content: space-between;
     margin-bottom: 4px;
 }
-.name{
+.movie .name{
     display: flex;
     align-items: center;
     /* flex-grow: 1; */
@@ -193,8 +194,78 @@
     text-align: center;
 }
 
-.ellipsis{
+
+/* 影院 */
+.cinema{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    justify-content: space-between;
+    padding: 30px 30px 30px 0;
+}
+.result .cinema .info {
+    -webkit-box-flex: 1;
+    flex: 1;
+    overflow: hidden;
+}
+.result .cinema .name {
+    display:flex;
+    align-items: center;
+    justify-content: left;
+    flex-grow: 1;
+    max-height: 48px;
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+}
+.cinema .name-price {
+    font-size: 32px;
+    color: #000;
+    margin-bottom: 12px;
+    display: flex;
+}
+.cinema .sell-price{
+    font-size: 22px;
+    color: #999;
+    white-space: nowrap;
+    margin-left: 20px;
+}
+.cinema .price{
+    font-size: 34px;
+    color: #ef4238;
+}
+.cinema .distance{
+    font-size: 26px;
+    color: #999;
+}
+.cinema .address{
+    display: block;
+    text-align: left;
+    font-size: 28px;
+    color: #999;
+}
+.cinema .feature-tags{
+    display: flex;
+    justify-content: left;
+    margin-top: 14px;
+}
+.cinema .feature-tags span{
+    border: 2px solid #589daf;
+    color: #589daf;
+    display: inline-block;
+    padding: 0 6px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 4px;
+    font-size: 30px;
+}
+.result .cinema .feature-tags span.featrue {
+    color: #f90;
+    border-color: #f90;
+}
+.ellipsis{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
 }

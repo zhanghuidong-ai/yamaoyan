@@ -14,7 +14,7 @@ class BottomNav extends React.Component{
 				<nav className="bottom-nav-bar">
 					<NavLink to={"/"} exact activeClassName={"App-active"} className="nav-icon-wrapper">
 						<span className="nav-icons">
-							<i className="iconfont icon-dianyingb" ></i>
+							<i className="iconfont icon-dy-light" ></i>
 						</span>
 						<span className="nav-text" >电影</span>
 					</NavLink>

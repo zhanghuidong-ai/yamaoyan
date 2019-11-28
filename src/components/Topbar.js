@@ -3,7 +3,8 @@ import React from 'react'
 import {
     NavLink,
     Route,
-    BrowserRouter as Router
+    BrowserRouter as Router,
+    withRouter
 } from 'react-router-dom'
 class Topbar extends React.Component{
     render(){
@@ -27,7 +28,7 @@ class Topbar extends React.Component{
                     </Router>
                     <div className='activeLine'></div>
                </ul>
-               <div className='search-entry'></div>
+               <div className='search-entry' onClick={()=>this.props.history.push("/search")}></div>
             </div >
             </div>
 
@@ -35,4 +36,4 @@ class Topbar extends React.Component{
     }
 
 }
-export default Topbar
+export default withRouter(Topbar)

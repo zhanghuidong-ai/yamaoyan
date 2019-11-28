@@ -12,10 +12,10 @@ class Header extends Component{
 		return (
 			<header className="navbar">
 			    <div className="nav-wrap-left">
-			        <Link className="react back" to={"/"}>返回<i className="text-icon icon-back"></i></Link>
+			        <Link className="react back" to={"/"}><i className="text-icon icon-back"></i></Link>
 			    </div>
 			    <h1 className="nav-header">
-			               {this.props.children}
+			        {this.props.children}
 			    </h1>
 			</header>
 		)
