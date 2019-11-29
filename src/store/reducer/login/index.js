@@ -9,6 +9,9 @@ export  default function (state=stateInit,{type,payload}) {
 	if(type === "ERROR"){
 		state[payload.info]=true
 	}
+	if(type==="CHANGEDISABLE"){
+		state.disabled=payload.info
+	}
 	if(type==="PASS"){
 		state[payload.info]=false
 	}
