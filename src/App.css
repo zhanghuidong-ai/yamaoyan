@@ -1,12 +1,19 @@
-.App {
-  text-align: center;
+
+*{box-sizing:border-box;}
+
+
+
+.App-logo {
+  height: 40vmin;
 }
+
 .nav{
   height:101px;
   color: #fff;
   background: #e54847;
   border-bottom: 2px solid #e54847;
   position: relative;
+
 }
 .nav_header h1{
   display: block;
