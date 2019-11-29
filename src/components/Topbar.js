@@ -1,5 +1,6 @@
 import '../assets/style/Topbar.css'
 import React from 'react'
+import The_MovieList from '../components/The_MovieList'
 import {
     NavLink,
     Route,
@@ -8,7 +9,7 @@ import {
 class Topbar extends React.Component{
     render(){
         return(
-            <div> 
+            <div className='nav-wrapper:after' > 
             <div className='nav'>
 
                <div className="city-entry">
@@ -18,18 +19,23 @@ class Topbar extends React.Component{
                <ul className="swith-hot"
                >
                    <Router>
-                
                     <NavLink activeClassName='activeRed' className={'li'} exact to={"/"}>正在热映</NavLink>
                     <NavLink activeClassName='activeRed' className={'li'} to={'/.f-hot'}>即将上映</NavLink>
-                    
+                    {/* <Route to={'/'} component={The_MovieList}></Route> */}
                     {/* <Route></Route>
                     <Route></Route> */}
                     </Router>
                     <div className='activeLine'></div>
                </ul>
-              
                <div className='search-entry'></div>
             </div >
+            {/* <The_MovieList></The_MovieList> */}
+            <Router>
+
+            <Route path={'/'} component={The_MovieList}></Route>
+            <Route path={'/.f-hot'} ></Route>
+            </Router>
+
             </div>
            
         )
