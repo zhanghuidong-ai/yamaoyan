@@ -92,7 +92,7 @@
     flex: 0 0 auto;
 }
 
-/* 结果 */
+/* ?? */
 .result-wrapper{
     height:100%;
     overflow: auto;
@@ -195,7 +195,7 @@
 }
 
 
-/* 影院 */
+/* ?? */
 .cinema{
     display: flex;
     -webkit-box-align: center;

@@ -25,6 +25,7 @@ class Search extends Component {
 	}
 }
 function mapStateToProps({login,search}) {
+	console.log(search)
     return {
 		login,
 		moviesList:search.movies|| {},
