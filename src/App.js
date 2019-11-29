@@ -12,6 +12,7 @@ import Search from "./components/Search"
 // import Cinema from "./views/Cinema";
 import MovieDetail from "./views/MovieDetail"
 import CinemaDetail from "./views/CinemaDetail"
+import CityList from './components/CityList';
 function App() {
   return (
     <div className="App">
@@ -20,7 +21,8 @@ function App() {
 		    <Route path={"/search"} component={Search}></Route>
         <Route path={"/movieDetail/:movieId"} component={MovieDetail}></Route>
 		    <Route path={"/cinemaDetail/:cinemaId"} component={CinemaDetail}></Route>
-			<Route path={"/"}  component={Home}></Route>
+		    <Route path={"/citylist"} component={CityList}></Route>
+			  <Route path={"/"}  component={Home}></Route>
       </Switch>
     </div>
   );
