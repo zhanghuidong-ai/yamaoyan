@@ -1,0 +1,51 @@
+.navbar {
+    height: 110px;
+    color: #fff;
+    background: #e54847;
+    border-bottom: 2px solid #e54847;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    position: relative;
+    font-family: Helvetica Neue,Helvetica,Arial,sans-serif;
+}
+.navbar .h1.nav-header, .navbar h1.nav-header {
+    display: block;
+    -webkit-box-flex: 2;
+    font-size: 39px;
+    font-weight: 400;
+    text-align: center;
+    line-height: 100px;
+    margin: 0;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-right: 105px;
+}
+.order-item {
+    background-color: #fff;
+    margin-bottom: 10px;
+}
+/* .mb-line-tb {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAABlBMVEUAAADh4eGdLxMbAAAAAXRSTlMAQObYZgAAAAxJREFUCNdjYGA4AAAAxADBPcXUKgAAAABJRU5ErkJggg==)
+     0 top repeat-x,
+     url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAABlBMV…GdLxMbAAAAAXRSTlMAQObYZgAAAAxJREFUCNdjYGA4AAAAxADBPcXUKgAAAABJRU5ErkJggg==) 0 bottom repeat-x; */
+/* } */
+.order-item .order-title {
+    display: -webkit-box;
+    display: flex;
+    padding: 0 15px;
+}
+.cinema-name{
+    display: inline-block;
+    text-align: left;
+    -webkit-box-flex: 2;
+    flex: 2 2 auto;
+    line-height: 72px;
+    height: 72px;
+    font-size: 26px;
+    color: #666;
+    margin-right: 12px;
+}
+.mb-line-b {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAIAAAACAQMAAABIeJ9nAAAABlBMVEUAAADh4eGdLxMbAAAAAXRSTlMAQObYZgAAAAxJREFUCNdjYGA4AAAAxADBPcXUKgAAAABJRU5ErkJggg==) 0 bottom repeat-x;
+}

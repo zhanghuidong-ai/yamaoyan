@@ -1,18 +1,25 @@
 import React from 'react';
 import './App.css';
-import "./assets/reset.css"
+import "./assets/style/css/reset.css"
+import "./assets/font_icon/iconfont.css"
 import {Route,Switch}  from "react-router-dom"
 import Home from "./views/Home"
 // import My from "./views/My";
-import Login from "./views/Login";
+import "./assets/style/css/home2.css"
+import Home2 from "./views/Home2";
+import Search from "./components/Search"
 // import Cinema from "./views/Cinema";
-
+import MovieDetail from "./views/MovieDetail"
+import CinemaDetail from "./views/CinemaDetail"
 function App() {
   return (
-    <div className="App">	
+    <div className="App">
       <Switch>
-		<Route path={"/login"} component={Login}></Route>
-      	<Route path={"/"}  component={Home}></Route>
+		    <Route path={"/home2"} component={Home2}></Route>
+		    <Route path={"/search"} component={Search}></Route>
+        <Route path={"/movieDetail/:movieId"} component={MovieDetail}></Route>
+		    <Route path={"/cinemaDetail/:cinemaId"} component={CinemaDetail}></Route>
+			<Route path={"/"}  component={Home}></Route>
       </Switch>
     </div>
   );
