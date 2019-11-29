@@ -12,11 +12,11 @@ export  default function (state=stateInit,{type,payload}) {
 	if(type==="PASS"){
 		state[payload.info]=false
 	}
-	if(type==="CHANGE_GET"){
-		state.isget=true
-	}
 	if(type==="UPUSERINFO"){
 		state[payload.info]=payload.text
+	}
+	if(type==="CLEARINFO"){
+		state.username=state.password=state.telid=""	
 	}
     return state;
 }

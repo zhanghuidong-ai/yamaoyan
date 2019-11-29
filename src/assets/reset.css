@@ -1,9 +1,0 @@
-html,body,ul,ol,dl,li,dl,dt,input,h1,h2,h3,h4,h5,h6,figure,figcaption,p,form,fieldest,legend{margin:0;padding:0;}
-h1,h2,h3,h4,h5,h6{font-size: 14px;font-weight:500;}
-ul,ol,li{list-style:none;}
-em,i{font-style:normal;}
-b,strong{font-weight:500;}
-input{outline: none;}
-img{display: block;}
-a{text-decoration: none;}
-input,select{border:0;outline: none;}

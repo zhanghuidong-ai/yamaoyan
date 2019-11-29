@@ -1,4 +1,4 @@
-import '../assets/style/Download_app_bar.css' //  头部的 app 下载条
+import '../assets/style/css/Download_app_bar.css' //  头部的 app 下载条
 import React from 'react'
 
 class Download_app_bar extends React.Component{

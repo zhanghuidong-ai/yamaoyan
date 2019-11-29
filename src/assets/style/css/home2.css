@@ -64,11 +64,13 @@ dl.list dd:last-of-type {
 .btn-wrapper {
     margin: 28px 20px;
 }
-.btn-block {
-    display: block;
-    width: 100%;
+.warp_btn:disabled{
+    background-color: #dcdcdc;
+    color: #999;
+    border: 0;
 }
 .warp_btn {
+	width: 100%;
 	display: inline-block;
     margin: 0;
     text-align: center;

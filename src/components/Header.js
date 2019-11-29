@@ -3,7 +3,7 @@ import {
 	Link,
 	withRouter
 } from "react-router-dom"
-import "../assets/style/header.css"
+import "../assets/style/css/header.css"
 class Header extends Component{
 	render(){
 		return (

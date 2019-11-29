@@ -8,10 +8,12 @@ export default {
 			}
 		}
 	},
-	changeget(){
+	clearinfo(){
 		return {
-			type:"CHANGE_GET",
-			payload:{}
+			type:"CLEARINFO",
+			payload:{
+				text:"",
+			}
 		}
 	},
 	goback(bool){

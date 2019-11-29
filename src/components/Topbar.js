@@ -1,4 +1,4 @@
-import '../assets/style/Topbar.css'
+import '../assets/style/css/Topbar.css'
 import React from 'react'
 import {
     NavLink,
@@ -18,13 +18,8 @@ class Topbar extends React.Component{
                </div>
                <ul className="swith-hot"
                >
-                   <Router>
                     <NavLink activeClassName='activeRed' className={'li'} exact to={"/"}>正在热映</NavLink>
                     <NavLink activeClassName='activeRed' className={'li'} to={'/.f-hot'}>即将上映</NavLink>
-
-                    {/* <Route></Route>
-                    <Route></Route> */}
-                    </Router>
                     <div className='activeLine'></div>
                </ul>
                <div className='search-entry'></div>

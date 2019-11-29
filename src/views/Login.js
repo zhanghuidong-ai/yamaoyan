@@ -55,7 +55,7 @@ class Login extends Component{
 					<input type="hidden" name="requestCode" />
 					<input type="hidden" name="responseCode" />
 					<div className="btn-wrapper">
-						<button type="submit"  className="warp_btn btn-block" onClick={this.btnclick.bind(this)}>登录</button>
+						<button type="submit"  className="warp_btn" onClick={this.btnclick.bind(this)}>登录</button>
 					</div>
 				{/*</form>*/}
 				<ul className="subline">

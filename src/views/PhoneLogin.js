@@ -7,6 +7,7 @@ import {
 } from "redux";
 class PhoneLogin extends Component{
 	componentDidMount(){
+		console.log(this.props.telid)
 		this.props.goback(false)
 	}
 	onfocus(e){
@@ -21,7 +22,7 @@ class PhoneLogin extends Component{
 				<form id="quick-login-form" action="https://i.meituan.com/account/mobilelogin2" autoComplete="off" method="post">
 					<dl className="list list-in"><dd className="visibale"><dl>
 						<dd className="kv-line-r dd-padding" data-com="smsBtn_quick" data-requrl="/account/custom/mobilelogincode2">
-							<input type="tel" onChange={()=>{console.log(12312312)}} name="mobile" id="login-mobile" className="input-weak kv-k "  onFocus={this.onfocus} onBlur={this.onblur} placeholder="请输入手机号" maxLength="11" />
+							<input type="tel" value={this.props.telid} onChange={this.props.upuserinfo.bind(this,"telid")} name="mobile" id="login-mobile" className="input-weak kv-k "  onFocus={this.onfocus} onBlur={this.onblur} placeholder="请输入手机号" maxLength="11" />
 							<div className="to-del J-to-del-mobile J-to-del" ></div>
 							<button id="smsCode" onClick={()=>console.log(111)} type="button" className="btn-weak kv-v btn-captacha" disabled={this.props.disabled}>获取验证码</button>
 						</dd>
@@ -36,7 +37,7 @@ class PhoneLogin extends Component{
 						</dd>*/}
 					</dl></dd></dl>
 					<div className="btn-wrapper">
-						<button type="submit" className="warp_btn btn-block" disabled="disabled">登录</button>
+						<button type="submit" className="warp_btn" disabled={this.props.disabled}>登录</button>
 					</div>
 					<input type="hidden" name="touchEvents" />
 					<input type="hidden" name="extraFingerPrint" />
@@ -64,7 +65,8 @@ function mapStateToProps(state){
 		isPassError:state.login.isPassError,
 		disabled:state.login.disabled,
 		isget:state.login.isget,
-		isgoback:state.login.isgoback
+		isgoback:state.login.isgoback,
+		telid:state.login.telid
 	}
 }
 function mapDispatchToProps(dispatch){
