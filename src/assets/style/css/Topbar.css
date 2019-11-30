@@ -1,9 +1,5 @@
 
-<<<<<<< HEAD:src/assets/style/Topbar.css
-.nav{
-=======
 .top-nav{
->>>>>>> 51c055b3f2c20e2c1934ba6acda9186a7f81716e:src/assets/style/css/Topbar.css
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -55,13 +51,9 @@
 .activeRed{
     color:#ef4238!important;
     border-bottom: 4px solid #ef4238;
-
-<<<<<<< HEAD:src/assets/style/Topbar.css
 }
 :after{
     content: "";
     display: block;
     position: absolute;
-=======
->>>>>>> 51c055b3f2c20e2c1934ba6acda9186a7f81716e:src/assets/style/css/Topbar.css
 }

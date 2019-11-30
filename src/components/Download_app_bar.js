@@ -13,15 +13,13 @@ class Download_app_bar extends React.Component{
     }
     render(){
         return(
-            <div className=''> 
-                <div className='download-app-bar'>
-                    <img src='//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/avatar.png'/>
-                    <div className='app-name-desc'>
-                        <div className="title">猫眼</div>
-                        <div className="desc">在线选座，热门影讯，爱上看电影</div>
-                    </div>
-                    <input type='button' value ="立即打开"/>
-                </div>
+            <div className='download-app-bar'> 
+				<img src='//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/avatar.png'/>
+				<div className='app-name-desc'>
+					<div className="title">猫眼</div>
+					<div className="desc">在线选座，热门影讯，爱上看电影</div>
+				</div>
+				<input type='button' value ="立即打开"/>
                 <ListenScroll num={700} scrollCallback={this.scrollHidden.bind(this,700)}></ListenScroll>
             </div>
         )

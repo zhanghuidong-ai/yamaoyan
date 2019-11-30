@@ -1,4 +1,4 @@
-import React,{Component} from "react"
+import React,{Component,Fragment} from "react"
 import Footer from "../components/user/Footer"
 import {connect} from "react-redux"
 import Home2ACTION from "../store/actionCreator/home2Action"
@@ -9,7 +9,6 @@ import {message} from 'antd';
 import {
 	Link 
 } from "react-router-dom"
-import { BackTop } from 'antd';
 const error = () => {
   message.error("请填写此字段");
 };
@@ -42,7 +41,7 @@ class Login extends Component{
 	}
 	render(){
 		return (
-			<div>
+			<Fragment>
 				<dl className="dllist list-in"><dd className="visibale"><dl>
 					<dd className="dd-padding kv-line-r">
 						<input id="username" value={this.props.username} onChange={this.props.upuserinfo.bind(this,"username")} className="input-weak" onFocus={this.onfocus} type="text" onBlur={this.onblur} placeholder="账户名/手机号/Email" ref="email" name="email"   />
@@ -61,14 +60,7 @@ class Login extends Component{
 				        </li><li className="pull-right"><a href="https://passport.meituan.com/useraccount/retrievepassword">找回密码</a>
 				</li></ul>
 				<Footer />
-				<div className="Top_back">
-				  
-				  S c r o l l d o w n t o s e e t h e b o t t o m -r i g h t
-				  <strong style={{ color: 'rgba(64, 64, 64, 0.6)' }}> gray </strong>
-				  button.<BackTop />
-				</div>
-				
-			</div>
+			</Fragment>
 		)
 	}
 }

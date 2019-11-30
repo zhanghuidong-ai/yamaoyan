@@ -1,4 +1,4 @@
-import React,{Component} from "react"
+import React,{Component,Fragment} from "react"
 import Footer from "../components/user/Footer"
 import {connect} from "react-redux"
 import Home2ACTION from "../store/actionCreator/home2Action"
@@ -25,7 +25,7 @@ class PhoneLogin extends Component{
 	}
 	render(){
 		return (
-			<div>
+			<Fragment>
 				<dl className="dllist list-in"><dd className="visibale"><dl>
 					<dd className="kv-line-r dd-padding" data-com="smsBtn_quick" data-requrl="/account/custom/mobilelogincode2">
 						<input type="tel" value={this.props.telid} onChange={this.telchange.bind(this)} name="mobile" id="login-mobile" className="input-weak kv-k "  onFocus={this.onfocus} onBlur={this.onblur} placeholder="请输入手机号" maxLength="11" />
@@ -55,7 +55,7 @@ class PhoneLogin extends Component{
 					<div className="msg-bd">手机号输入不正确，请重新输入</div>
 					<div className="msg-ft cf"><span className="msg-btn msg-btn-ok" data-event="ok">确定</span></div>
 				</div>
-			</div>
+			</Fragment>
 		)
 	}
 }

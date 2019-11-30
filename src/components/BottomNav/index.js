@@ -10,7 +10,12 @@ import My from "../../views/My";
 class BottomNav extends React.Component{
 	render(){
 		return(
-			<div>
+			<div className="App-div">		
+				<Switch>
+					<Route path={"/"} exact component={Movie}></Route>
+					<Route path={"/cinema"} component={Cinema}></Route>
+					<Route path={"/my"} component={My}></Route>
+				</Switch>
 				<nav className="bottom-nav-bar">
 					<NavLink to={"/"} exact activeClassName={"App-active"} className="nav-icon-wrapper">
 						<span className="nav-icons">
@@ -31,11 +36,6 @@ class BottomNav extends React.Component{
 						<span className="nav-text" >我的</span>
 					</NavLink>
 				</nav>
-				<Switch>
-					<Route path={"/"} exact component={Movie}></Route>
-					<Route path={"/cinema"} component={Cinema}></Route>
-					<Route path={"/my"} component={My}></Route>
-				</Switch>
 			</div>
 		)
 	}
