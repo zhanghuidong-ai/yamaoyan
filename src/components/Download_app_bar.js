@@ -9,13 +9,12 @@ class Download_app_bar extends React.Component{
         //  wrapper[0].style.display='none'
         // console.log(wrapper[0].style.display)
         // }
-      
     }
     render(){
         return(
             <div className=''> 
                 <div className='download-app-bar'>
-                    <img src='//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/avatar.png'/>
+                    <img src='//s0.meituan.net/bs/?f=myfe/canary:/asgard/images/avatar.png' alt='true'/>
                     <div className='app-name-desc'>
                         <div className="title">猫眼</div>
                         <div className="desc">在线选座，热门影讯，爱上看电影</div>

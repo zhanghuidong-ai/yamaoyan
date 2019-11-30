@@ -17,7 +17,7 @@ class The_MovieList extends React.Component{
                    
                     <div className='page-item-wrap ' key={v.id}>
                     <div className="default-img-bg">
-                        <img src="https://p0.meituan.net/128.180/movie/609e45bd40346eb8b927381be8fb27a61760914.jpg "/>		
+                        <img src={this.$tools.ImgUrl(v.img)} alt={v.nm}/>		
                     </div>        
                         <div className=" content">
                             <div className="m-left">

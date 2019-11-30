@@ -9,7 +9,7 @@ import Home2 from "./views/Home2";
 import Search from "./components/Search"
 import MovieDetail from "./views/MovieDetail"
 import CinemaDetail from "./views/CinemaDetail"
-import Register from "./views/Register"
+import Register from "./views/register"
 function App() {
   return (
     <div className="App">

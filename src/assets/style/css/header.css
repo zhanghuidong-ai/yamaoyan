@@ -4,7 +4,8 @@
     background: #df2d2d;
     border-bottom: 1px solid #bc1d1d;
     position: relative;
-	display: flex;
+    display: flex;
+  
 }
 .navbar .nav-wrap-left {
     height: 101px;

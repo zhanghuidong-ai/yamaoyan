@@ -1,6 +1,7 @@
 .page-wrap{
     width: 750px;
-    
+    overflow: scroll;
+    height: 1144px;
 }
 .page-item-wrap{
     height: 228px;
