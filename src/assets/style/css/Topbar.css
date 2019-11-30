@@ -1,5 +1,9 @@
 
+<<<<<<< HEAD:src/assets/style/Topbar.css
+.nav{
+=======
 .top-nav{
+>>>>>>> 51c055b3f2c20e2c1934ba6acda9186a7f81716e:src/assets/style/css/Topbar.css
     display: flex;
     justify-content: space-around;
     text-align: center;
@@ -7,6 +11,7 @@
     width: 100%;
     border-bottom:1px solid #e6e6e6 ;
     position: relative;
+    /* position: fixed; */
 }
 .city-entry{
     line-height: 88px;
@@ -34,6 +39,7 @@
     margin:60px;
     margin-top:0;
     margin-bottom:0;
+    border-bottom: 4px solid #e6e6e6;
 }
 .swith-hot .li{
     padding:25px ;
@@ -48,6 +54,14 @@
 }
 .activeRed{
     color:#ef4238!important;
-    border-bottom: 2px solid #ef4238;
+    border-bottom: 4px solid #ef4238;
 
+<<<<<<< HEAD:src/assets/style/Topbar.css
+}
+:after{
+    content: "";
+    display: block;
+    position: absolute;
+=======
+>>>>>>> 51c055b3f2c20e2c1934ba6acda9186a7f81716e:src/assets/style/css/Topbar.css
 }
