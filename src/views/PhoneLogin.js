@@ -9,6 +9,9 @@ import {
 	Link 
 } from "react-router-dom"
 class PhoneLogin extends Component{
+	UNSAFE_componentWillMount(){
+		this.props.changedisable(true)
+	}
 	componentDidMount(){
 		this.props.goback(false)
 	}
@@ -40,7 +43,7 @@ class PhoneLogin extends Component{
 					</dd>*/}
 					</dl></dd></dl>
 					<div className="btn-wrapper">
-						<button type="submit" className="warp_btn" disabled={this.props.disabled}>登录</button>
+						<button type="submit" onClick={()=>{console.log(1111)}} className="warp_btn" disabled={this.props.disabled}>登录</button>
 					</div>
 					{/*<div className="unreceived-tip J-not-received">
 						<p>仍未收到验证码？拨打<a href="tel:10109777" className="dial">查询热线</a>快速获取吧（9：00-23：00提供服务）</p>
