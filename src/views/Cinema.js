@@ -1,4 +1,4 @@
-import React,{Component} from "react"
+import React,{Component,Fragment} from "react"
 import axios from 'axios'
 import pubsub from 'pubsub-js'
 import SearchCinema from '../components/cinema/searchCinema.js'
@@ -13,17 +13,20 @@ export default class My extends Component{
 	}
 	render(){
 		return (
-			<div>
-			  <div>
-				<div style={{height:'40px',textAlign:'center',lineHeight:'40px',background:'red',color:'#fff',fontSize:'15px'}}>影院</div>
+			<Fragment>
+				<header className="header-nav">
+					<div className="nav_header">
+						<h1>影院</h1>
+					</div>
+				</header>
 				<div style={{height:'40px',textAlign:'center',lineHeight:'40px',background:'#f5f5f5'}}>
 				<span>北京</span>
 				<input  style={{margin:'0 15px',height: '28px',width:'280px',textAlign:'center',alignItems: 'center',border:' .5px solid #e6e6e6',borderRadius: '5px'}} type='text' placeholder='搜影院' />
 				</div>
 				<SearchCinema></SearchCinema>
-			  </div>
+
 				<CinemaList {...this.state}></CinemaList>
-			</div>
+			</Fragment>
 		)
 	}
 	 async componentDidMount(){

@@ -4,6 +4,7 @@
     background: #e6e6e6;
     z-index: 1;
 }
+
 .top-nav{
     display: flex;
     justify-content: space-around;
@@ -49,7 +50,7 @@
 .search-entry{
     width: 44px;
     height: 44px;
-    background: url('../../movie-type/getLarger.png') no-repeat;
+    background: url('../img/movie-type/getLarger.png') no-repeat;
     background-size: 44px 44px;
     margin: 22px 22px 22px 22px;
 }

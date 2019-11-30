@@ -53,7 +53,7 @@ class The_MovieList extends React.Component{
                 ))
 
                 }
-                <ListenScroll num={228} scrollCallback={this.scroll}></ListenScroll>
+                <ListenScroll num={200} scrollCallback={this.scroll}></ListenScroll>
             </div>
               
          </Fragment>  
@@ -61,15 +61,16 @@ class The_MovieList extends React.Component{
     }
     componentDidMount(){
         this.props.getMovieList.call(this)
+        this.props.getMore.call(this)
     }
     
 }
 function mapStateToProps({The_MovieList}){
     console.log(The_MovieList)
     return{
-        movieList: The_MovieList.movieList
+        movieList: The_MovieList.movieList,
+        moreList: The_MovieList.moreList
     }
-    
 }
 function mapDispatchToProps(dispatch){
     return bindActionCreators(movieListCreator,dispatch)

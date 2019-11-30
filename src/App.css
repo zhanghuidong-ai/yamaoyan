@@ -1,33 +1,34 @@
 
 *{box-sizing:border-box;}
 
-
-
 .App-logo {
   height: 40vmin;
 }
-
-.nav{
+#root,.App{height:100%}
+.App-div{display: flex;height:100%;flex-direction:column;}
+.connect{display: flex;flex-direction:column;flex:1;overflow: auto;}
+.page-wrap{ flex:1;background:#f6f6f6;overflow: auto;}
+.header-nav{
   height:101px;
   color: #fff;
   background: #e54847;
   border-bottom: 2px solid #e54847;
   position: relative;
-
+  justify-content: center;
+  display:flex;
 }
 .nav_header h1{
-  display: block;
   font-size: 36px;
   font-weight: 400;
-  text-align: center;
   line-height: 100px;
   margin: 0;
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color:#fff;
 }
 .bottom-nav-bar{
-  position: fixed;
+  height:96px;
   bottom: 0;
   width: 100%;
   background: #fff;
@@ -67,24 +68,10 @@
 }
 
 
-.three_bot{
-	width:100%;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	position: fixed;
-	bottom:0px;
-	height:30px;
-	border:1px solid red
-}
-
-
 
 .App-link {
   color: #09d3ac;
 }
-*{box-sizing:border-box;}
-
 
 .App-active{
 	color:#f03d37

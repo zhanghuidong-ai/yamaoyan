@@ -4,6 +4,9 @@ export default function (state=The_MovieList_State,{type,payload}){
         if(type==='UP_MOVIE_LIST'){ 
             state.movieList=payload.movieList
             // console.log(payload.movieList,payload.movieIds)
+        }else if(type==='UP_MOVIE_LIST'){
+            state.moreList=[ ...state.moreList,...payload.comingList]
         }
     return state
 }
+
