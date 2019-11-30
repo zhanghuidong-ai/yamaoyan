@@ -1,7 +1,4 @@
-.page-wrap{
-    width: 750px;
-    
-}
+
 .page-item-wrap{
     height: 228px;
     width: 100%;
@@ -31,13 +28,11 @@
 }
 
 .m-title{
-    font:#333;
     font-size:34px ;
     font-weight: 900;
     padding-right: 10px;
     text-align: left;
-    margin-bottom: 10px;
-    
+    margin-bottom: 10px;   
 }
 .movie-title{
     display: flex;
@@ -64,11 +59,6 @@
 }
 .show-info{
     margin-top:10px;
-}
-.line-ellipsis{
-    overflow:hidden; 
-    text-overflow:ellipsis;
-    white-space: nowrap;
 }
 
 .buy-ticket{

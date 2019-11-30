@@ -6,8 +6,8 @@
 }
 #root,.App{height:100%}
 .App-div{display: flex;height:100%;flex-direction:column;}
-.connect{display: flex;flex-direction:column;flex:1;overflow: auto;}
-.page-wrap{ flex:1;background:#f6f6f6;overflow: auto;}
+.connect{display: flex;flex-direction:column;flex:1;overflow: auto;width:100%;}
+.page-wrap{ flex:1;background:#f6f6f6;overflow: auto;width:100%;}
 .header-nav{
   height:101px;
   color: #fff;
