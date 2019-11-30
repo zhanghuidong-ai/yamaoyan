@@ -4,6 +4,5 @@ export default function(state=initCityList,{type,payload}){
 	if(type==="GET_CITIES"){
 		state.cities =  payload.cities
 	}
-	// console.log(state.cities)
 	return state
 }
