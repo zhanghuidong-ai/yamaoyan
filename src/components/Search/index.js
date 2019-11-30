@@ -1,5 +1,5 @@
 import React,{Component,Fragment} from "react"
-import "./index.css"
+import "../../assets/style/css/search/search.css"
 import {connect} from "react-redux"
 import {bindActionCreators} from "redux"
 import SearchHeaderActionCreater from "../../store/actionCreator/search/index"
@@ -25,7 +25,6 @@ class Search extends Component {
 	}
 }
 function mapStateToProps({login,search}) {
-	console.log(search)
     return {
 		login,
 		moviesList:search.movies|| {},

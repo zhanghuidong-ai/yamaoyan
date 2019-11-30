@@ -5,6 +5,7 @@ export default (state=SearchInit,{type,payload})=>{
 	if(type==="GET_SEARCH_RESULT"){
 		state.cinemas = payload.cinemas
 		state.movies = payload.movies
+
 	}
 	return state
 }

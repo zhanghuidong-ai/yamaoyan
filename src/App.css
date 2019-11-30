@@ -25,6 +25,7 @@
   text-overflow: ellipsis;
   white-space: nowrap;
   overflow: hidden;
+  color:#fff;
 }
 .bottom-nav-bar{
   height:96px;

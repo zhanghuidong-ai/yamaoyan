@@ -12,7 +12,7 @@ class Header extends Component{
 			        <Link className="react back" to={"/"}><i className="text-icon iconfont icon-left-arrow"></i></Link>
 			    </div>
 			    <h1 className="nav-header">
-			               {this.props.children}
+			        {this.props.children}
 			    </h1>
 			</header>
 		)

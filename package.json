@@ -18,13 +18,13 @@
     "redux-thunk": "^2.3.0",
     "sass-loader": "^8.0.0"
   },
+  "proxy": "http://m.maoyan.com/",
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "proxy": "http://m.maoyan.com",
   "eslintConfig": {
     "extends": "react-app"
   },

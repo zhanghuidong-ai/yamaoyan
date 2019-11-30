@@ -10,7 +10,7 @@ import My from "../../views/My";
 class BottomNav extends React.Component{
 	render(){
 		return(
-			<div className="App-div">		
+			<div className="App-div">
 				<Switch>
 					<Route path={"/"} exact component={Movie}></Route>
 					<Route path={"/cinema"} component={Cinema}></Route>

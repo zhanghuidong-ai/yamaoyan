@@ -4,7 +4,6 @@
     justify-content: space-around;
     text-align: center;
     height: 88px;
-    width: 100%;
     border-bottom:1px solid #e6e6e6 ;
     position: relative;
     /* position: fixed; */
@@ -51,9 +50,4 @@
 .activeRed{
     color:#ef4238!important;
     border-bottom: 4px solid #ef4238;
-}
-:after{
-    content: "";
-    display: block;
-    position: absolute;
 }
