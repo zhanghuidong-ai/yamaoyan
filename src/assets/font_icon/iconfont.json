@@ -1,0 +1,72 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "333357",
+      "name": "电影",
+      "font_class": "dianyingb",
+      "unicode": "e658",
+      "unicode_decimal": 58968
+    },
+    {
+      "icon_id": "1336640",
+      "name": "导航",
+      "font_class": "daohang",
+      "unicode": "e612",
+      "unicode_decimal": 58898
+    },
+    {
+      "icon_id": "3151396",
+      "name": "左箭头",
+      "font_class": "left-arrow",
+      "unicode": "e561",
+      "unicode_decimal": 58721
+    },
+    {
+      "icon_id": "6304035",
+      "name": "刷新",
+      "font_class": "rs-refresh",
+      "unicode": "e61b",
+      "unicode_decimal": 58907
+    },
+    {
+      "icon_id": "6360043",
+      "name": "搜索--1",
+      "font_class": "xingtaiduICON_sousuo---copy",
+      "unicode": "e503",
+      "unicode_decimal": 58627
+    },
+    {
+      "icon_id": "6721961",
+      "name": "下三角",
+      "font_class": "lower-triangle",
+      "unicode": "e502",
+      "unicode_decimal": 58626
+    },
+    {
+      "icon_id": "7560631",
+      "name": "下三角",
+      "font_class": "lower",
+      "unicode": "e5eb",
+      "unicode_decimal": 58859
+    },
+    {
+      "icon_id": "8948940",
+      "name": "我 的",
+      "font_class": "wode",
+      "unicode": "e504",
+      "unicode_decimal": 58628
+    },
+    {
+      "icon_id": "11218200",
+      "name": "影院",
+      "font_class": "yingyuan",
+      "unicode": "e675",
+      "unicode_decimal": 58997
+    }
+  ]
+}

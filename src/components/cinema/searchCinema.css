@@ -1,0 +1,76 @@
+
+.searchNav{
+	display:flex;
+	
+}
+
+	
+.searchNav_active{
+	border-bottom:1px solid #000;
+}
+.searchNav div{
+	flex:1;
+	text-align:center;
+	line-height:40px;
+	font-size:13px;
+	postion:relative;
+}
+.drop{
+	display: inline-block;
+	position: absolute;
+	border: 4px solid transparent;
+	margin-left: 4px;
+	height: 0;
+	width:0;
+	top:18px;
+	border-top-color:#ccc;
+}
+.drop_active{
+	border-bottom-color:1px solid #ccc;
+	color:#f03d37;
+}
+.second_Nav{
+	display:flex;
+	font-size:15px;
+	
+}
+.second_Nav div{
+	flex:1;
+	text-align:center;
+	line-height:44px;
+	padding:0 10px;
+}
+.second_Nav_active{
+	color:#f03d37;
+	border-bottom:1px solid #f03d37;
+}
+
+.third_list{
+	height:90px;
+	line-height:80px;
+	font-size:14px;
+	padding-left:10px;
+	white-space: nowrap;
+}
+.third_list_active{
+	color:#f03d37;
+	background:rgb(245,245,245);
+}
+.brand_list{
+	font-size:15px;
+	color:#333;
+	line-height:80px;
+	padding:0 20px;
+	border-bottom:1px solid rgb(245,245,245);
+}
+.serive_list{
+	float:left;
+	line-height:60px;
+	height:65px;
+	width:200px;
+	text-align:center;
+	margin:10px;
+	border:1px solid #ccc;
+	border-radius:5px
+}
+
