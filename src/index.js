@@ -12,12 +12,12 @@ import {Provider} from "react-redux"
 import store from "./store"
 import axios from "axios"
 import tools from "./tools"
+React.Component.prototype.$axios=axios
 React.Component.prototype.$tools = tools
-React.Component.prototype.$axios = axios
 
 
 
-ReactDOM.render(<Provider store={store}><Router><App /></Router></Provider>, document.getElementById('root'));
+ReactDOM.render(<Provider store={store}><Router ><App /></Router></Provider>, document.getElementById('root'));
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

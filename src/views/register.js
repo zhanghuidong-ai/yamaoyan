@@ -1,4 +1,4 @@
-import React,{Component} from "react"
+import React,{Component,Fragment} from "react"
 import Footer from "../components/user/Footer"
 import Header from "../components/Header";
 import "../assets/style/css/register.css"
@@ -14,7 +14,7 @@ export default class My extends Component{
 	}
 	render(){
 		return (
-			<div>
+			<Fragment>
 				<Header >
 					<div>猫眼电影</div>
 				</Header>
@@ -34,7 +34,7 @@ export default class My extends Component{
 				        <button type="submit" className="btn-wrapper btn-block btn-larger" disabled="">获取验证码</button>
 				    </div>
 				<Footer></Footer>
-			</div>
+			</Fragment>
 		)
 	}
 }
