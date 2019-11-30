@@ -4,9 +4,10 @@ import city from "./city"
 import {
     combineReducers
 } from "redux";
-
+import The_MovieList from "./The_MovieList";
 export default combineReducers({
     login,
     search,
-    city
+    city,
+    The_MovieList,
 });

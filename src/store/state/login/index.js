@@ -4,9 +4,9 @@ const state={
 	isIdError:false,
 	isPassError:false,
 	disabled:true,
-	isget:false,
 	tle:"",
 	username:"",
 	password:"",
+	telid:"",
 }
 export default state

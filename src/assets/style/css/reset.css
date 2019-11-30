@@ -7,8 +7,7 @@ input{outline: none;}
 img{display: block;}
 a{text-decoration: none;}
 input,select{border:0;outline: none;}
-.clearfix:after {
-    content: " ";
-    display: table;
-    clear: both;
-}
+html,body{height:100%;background-color: #f8f8f8;}
+body{font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 28px;
+    line-height: 1;}

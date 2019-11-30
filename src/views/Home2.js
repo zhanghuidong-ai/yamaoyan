@@ -13,8 +13,8 @@ import {
     bindActionCreators
 } from "redux";
 class Index extends React.Component{
-	componentDidMount(){
-		this.props.changeget()
+	componentWillUnmount(){
+		this.props.clearinfo()
 	}
     render(){
         return (
@@ -25,7 +25,7 @@ class Index extends React.Component{
 				<nav className={"taba"}>
 					<Link to={"/home2"}>美团账号登录</Link>
 					<Link to={"/home2/PhoneLogin"}>手机验证登录</Link>
-					<div className="slide" ref="bottom_left" style={{left:this.props.isgoback?"20px":"175px"}}></div>
+					<div className="slide" ref="bottom_left" style={{left:this.props.isgoback?"10px":"190px"}}></div>
 				</nav>	
 				<Switch>
 					<Route path={"/home2"} exact component={Login}></Route>
@@ -39,7 +39,6 @@ function mapStateToProps(state){
 	return {
 		isgoback:state.login.isgoback,
 		islogin:state.login.islogin,
-		isget:state.login.isget
 	}
 }
 function mapDispatchToProps(dispatch){

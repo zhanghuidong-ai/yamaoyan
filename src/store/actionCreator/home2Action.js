@@ -8,10 +8,20 @@ export default {
 			}
 		}
 	},
-	changeget(){
+	clearinfo(){
 		return {
-			type:"CHANGE_GET",
-			payload:{}
+			type:"CLEARINFO",
+			payload:{
+				text:"",
+			}
+		}
+	},
+	changedisable(info){
+		return {
+			type:"CHANGEDISABLE",
+			payload:{
+				info
+			}
 		}
 	},
 	goback(bool){

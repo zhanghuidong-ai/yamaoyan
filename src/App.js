@@ -6,7 +6,7 @@ import {Route,Switch}  from "react-router-dom"
 import Home from "./views/Home"
 // import My from "./views/My";
 import Login from "./views/Login";
-import "./assets/style/home2.css"
+import "./assets/style/css/home2.css"
 import Home2 from "./views/Home2";
 import Search from "./components/Search"
 // import Cinema from "./views/Cinema";

@@ -21,11 +21,11 @@
     border-bottom: 8px solid #FFC300;
     transition: left .2s ease-in;
 }
-dl.list:first-child {
+dl.dllist:first-child {
     margin: 0;
     border-top: 0;
 }
- dl.list dd {
+ dl.dllist dd {
     margin: 0;
     border-bottom: 1px solid #d6d6d6;
     overflow: hidden;
@@ -33,20 +33,20 @@ dl.list:first-child {
     font-weight: 400;
     position: relative;
 }
-dl.list dd dl {
+dl.dllist dd dl {
     margin: 0;
     margin-bottom: -1px;
     padding-left: 20px;
     border: 0;
 	background: #fff;
 }
-dl.list .dd-padding{
+dl.dllist .dd-padding{
     padding: 28px 20px;
 }
 .input-bac{
 	background: #dcdcdc;
 }
-dl.list dd>.input-weak {
+dl.dllist dd>.input-weak {
     width: 100%;
     display: block;
 	border: 0;
@@ -58,17 +58,19 @@ dl.list dd>.input-weak {
 	border-radius: 6px;
 	padding: 0;
 }
-dl.list dd:last-of-type {
+dl.dllist dd:last-of-type {
     border-bottom: 0;
 }
 .btn-wrapper {
     margin: 28px 20px;
 }
-.btn-block {
-    display: block;
-    width: 100%;
+.warp_btn:disabled{
+    background-color: #dcdcdc;
+    color: #999;
+    border: 0;
 }
 .warp_btn {
+	width: 100%;
 	display: inline-block;
     margin: 0;
     text-align: center;
@@ -127,7 +129,7 @@ dl.list dd>.btn-weak {
 .btn-weak {
 	position: absolute;
 	right:20px;
-	top:26px;
+	top:11px;
     border: 2px solid #df2d2d;
     padding:0 30px;
     color: #df2d2d;
@@ -137,9 +139,7 @@ dl.list dd>.btn-weak {
 	height: 60px;
 	border-radius: 6px;
 	font-size: 28px;
-	vertical-align: middle;
 	line-height: 60px;
-	box-sizing: border-box;
 	cursor: pointer;
 }
 .error_text{border: 1px solid red;margin:20px 0 0 0;height:50px;line-height: 50px;}
@@ -151,3 +151,7 @@ dl.list dd>.btn-weak {
     position: relative;
 	font-size: 45px;
 }
+.Top_back{
+	width:1px;height:300px;font-size:10px;line-height: 100px;
+}
+.ant-back-top{width:20px;height:20px;background: red;}

@@ -1,5 +1,6 @@
-import '../assets/style/Topbar.css'
+import '../assets/style/css/Topbar.css'
 import React from 'react'
+import The_MovieList from '../components/The_MovieList'
 import {
     NavLink,
     Route,
@@ -17,22 +18,18 @@ class Topbar extends React.Component{
         return(
             <div>
             <div className='top-nav'>
-
-
                <div className="city-entry" onClick={()=>this.props.history.push("/citylist")}>
                     {
                         <span>{this.state.cityNm}</span>
                      }
                    <i className='city-entry-arrow'></i>
                </div>
-               <ul className="swith-hot"
-               >
+               <ul className="swith-hot">
                    <Router>
                     <NavLink activeClassName='activeRed' className={'li'} exact to={"/"}>正在热映</NavLink>
                     <NavLink activeClassName='activeRed' className={'li'} to={'/.f-hot'}>即将上映</NavLink>
-
-                    {/* <Route></Route>
-                    <Route></Route> */}
+                    <Route path={'/'} component={The_MovieList}></Route>
+                     <Route path={'/.f-hot'} ></Route>
                     </Router>
                     <div className='activeLine'></div>
                </ul>

@@ -10,7 +10,7 @@ import My from "../../views/My";
 class BottomNav extends React.Component{
 	render(){
 		return(
-			<div>
+			<div className="bottom-nav">
 				<nav className="bottom-nav-bar">
 					<NavLink to={"/"} exact activeClassName={"App-active"} className="nav-icon-wrapper">
 						<span className="nav-icons">
