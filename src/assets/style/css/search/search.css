@@ -195,29 +195,22 @@
 }
 
 
-/* ?? */
+/* 影院 */
 .cinema{
     display: flex;
-    -webkit-box-align: center;
     align-items: center;
-    -webkit-box-pack: justify;
     justify-content: space-between;
     padding: 30px 30px 30px 0;
 }
-.result .cinema .info {
-    -webkit-box-flex: 1;
+.result .cinema-info {
     flex: 1;
     overflow: hidden;
 }
 .result .cinema .name {
-    display:flex;
     align-items: center;
     justify-content: left;
     flex-grow: 1;
     max-height: 48px;
-    overflow: hidden;
-    white-space: nowrap;
-    text-overflow: ellipsis;
 }
 .cinema .name-price {
     font-size: 32px;

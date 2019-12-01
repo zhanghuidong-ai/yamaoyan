@@ -3,6 +3,7 @@ import {
 	withRouter,
 } from "react-router-dom"
 class SearchResult extends React.Component {
+
 	render() {
 		const moviesList = this.props.moviesList.list || []
 		const cinemasList = this.props.cinemasList.list ||[]
@@ -16,7 +17,7 @@ class SearchResult extends React.Component {
 							moviesList.map((v) => (
 								<div key={v.id} className="search-list"  >
 									<div className="movie" onClick={()=>this.props.history.push({pathname:"/movieDetail/"+v.id})}>
-										<img className="poster" src={this.$tools.ImgUrl(v.img)} alt={v.nm} />
+										<img className="poster" src={this.$tools.ImgUrl(v.img,"128","180")} alt={v.nm} />
 										<div className="info">
 											<div className="name-score">
 												<p className="name ellipsis">

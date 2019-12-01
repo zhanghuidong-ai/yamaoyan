@@ -21,8 +21,13 @@ class SearchHeader extends React.Component{
 		this.props.history.push('/')
 	}
 	delKeyWord(){
-		this.refs.content.value=null;
+		this.refs.content.value=null
 		this.props.getSearchResult.call(this)
+	}
+	UNSAFE_componentWillMount(){
+		if(!localStorage.searchHistory){
+			localStorage.searchHistory=JSON.stringify([])
+		}
 	}
 }
 export default withRouter(SearchHeader)

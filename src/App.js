@@ -14,6 +14,7 @@ import MovieDetail from "./views/MovieDetail"
 import CinemaDetail from "./views/CinemaDetail"
 import Register from "./views/register"
 import CityList from './components/CityList';
+import MovieInfos from './views/MovieInfos';
 function App() {
   return (
     <div className="App">
@@ -23,6 +24,7 @@ function App() {
         <Route path={"/movieDetail/:movieId"} component={MovieDetail}></Route>
 		    <Route path={"/cinemaDetail/:cinemaId"} component={CinemaDetail}></Route>
 		    <Route path={"/citylist"} component={CityList}></Route>
+        <Route path={"/movieInfo/:movieId"} component={MovieInfos}></Route>
 			  <Route path={"/"}  component={Home}></Route>
       </Switch>
     </div>
