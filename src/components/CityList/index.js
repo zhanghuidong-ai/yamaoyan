@@ -4,10 +4,16 @@ import {connect} from "react-redux"
 import {bindActionCreators} from "redux"
 import CityListActionCreator from "../../store/actionCreator/city"
 class CityList extends React.Component {
+	constructor(){
+		super();
+		this.state={
+			cityHistory:[]
+		}
+	}
 	render() {
-		console.log(this.props)
 		const cities = this.props.cityList ||[]
 		const words = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","P","Q","R","S","T","W","X","Y","Z"]
+		const cityHistory =localStorage.cityHistory?JSON.parse(localStorage.cityHistory):[]
 		return (
 			<div>城市列表
 				<section id="city-list" className="city-list-container">
@@ -24,9 +30,9 @@ class CityList extends React.Component {
 						最近访问城市
 						</div>
 						<div className="city-list city-list-inline clearfix">
-							<div className="city-item" data-nm="南京" data-id="55">南京</div>
-							<div className="city-item" data-nm="深圳" data-id="30">深圳</div>
-							<div className="city-item" data-nm="北京" data-id="1">北京</div>
+							{
+								cityHistory.length>0?cityHistory.map((v)=>(<div className="city-item" key={v.id} onClick={()=>this.tabCity(v.id,v.cityNm)} >{v.cityNm}</div>)):null
+							}
 						</div>
 
 					</section>
@@ -46,7 +52,6 @@ class CityList extends React.Component {
 						</div>
 					</section>
 					<section>
-
 					{
 							words.map((i)=>(
 								<div key={i}>
@@ -88,30 +93,47 @@ class CityList extends React.Component {
 			</div>
 		)
 	}
+
+
 	componentDidMount() {
 		if(!localStorage.cities)
 			this.props.getCityList.call(this)
 	}
+	//锚点
 	scrollToAnchor = (anchorName) => {
 		if (anchorName) {
 			let anchorElement = document.getElementById(anchorName);
 			if(anchorElement) { anchorElement.scrollIntoView(); }
 		}
 	}
+	//切换
 	tabCity(id,cityNm){
+
+		if(this.props.cityHistory.indexOf({"id":id,"cityNm":cityNm}) === -1){
+			if(this.props.cityHistory.length>=3){
+				this.props.cityHistory.pop()
+			}
+			this.props.cityHistory.unshift({"id":id,"cityNm":cityNm})
+		}else{
+			this.props.cityHistory.splice(this.props.cityHistory.indexOf({"id":id,"cityNm":cityNm}),1)
+			this.props.unshift(cityNm)
+		}
+
+		if(this.props.cityHistory.length>3){
+			this.props.cityHistory.pop()
+		}
+		localStorage.cityHistory = JSON.stringify(this.props.cityHistory)
 		this.props.history.push({"pathname":"/",query:{"id":id,"cityNm":cityNm}})
 	}
 }
 function mapStateToProps(state){
-	// console.log(JSON.parse(state.city.cities).cts)
-	// console.log(state)
 	return {
-		cityList: state.city.cities
+		cityList: state.city.cities,
+		cityHistory:!localStorage.cityHistory?[]:JSON.parse(localStorage.cityHistory)
 	}
 }
 function mapDispatchToProps(dispatch){
 	return bindActionCreators(CityListActionCreator,dispatch)
-
 }
 export default connect(mapStateToProps,mapDispatchToProps)(CityList)
 
