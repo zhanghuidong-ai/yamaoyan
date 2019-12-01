@@ -33,7 +33,6 @@ function mapStateToProps({login,search}) {
 }
 function mapDispatchToProps(dispatch){
 	return bindActionCreators(SearchHeaderActionCreater,dispatch)
-
 }
 export default connect(mapStateToProps,mapDispatchToProps)(Search)
 // export default Search
