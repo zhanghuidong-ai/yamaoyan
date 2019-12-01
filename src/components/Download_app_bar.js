@@ -2,14 +2,7 @@ import '../assets/style/css/Download_app_bar.css' //  头部的 app 下载条
 import React from 'react'
 import ListenScroll from '../l-tools'
 class Download_app_bar extends React.Component{
-    scrollHidden(num){
-        // const wrapper = document.getElementsByClassName('download-app-bar')
-        // console.log(window.scrollY)
-        // if(num>650){
-        //  wrapper[0].style.display='none'
-        // console.log(wrapper[0].style.display)
-        // }
-    }
+ 
     render(){
         return(
             <div className='download-app-bar'> 
@@ -19,7 +12,8 @@ class Download_app_bar extends React.Component{
 					<div className="desc">在线选座，热门影讯，爱上看电影</div>
 				</div>
 				<input type='button' value ="立即打开"/>
-                <ListenScroll num={700} scrollCallback={this.scrollHidden.bind(this,700)}></ListenScroll>
+               
+                <ListenScroll num={800} scrollCallback={()=>200<=document.querySelector(".page-wrap").scrollTop ? document.querySelector('.download-app-bar').style.display='none':document.querySelector('.download-app-bar').style.display='flex'}></ListenScroll>
             </div>
         )
     }

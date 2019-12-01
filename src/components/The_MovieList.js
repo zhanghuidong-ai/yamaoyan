@@ -5,20 +5,18 @@ import movieListCreator,{upMovieList} from '../store/createAction/The_MovieList'
 import { bindActionCreators} from 'redux'
 import ListenScroll from '../l-tools'
 class The_MovieList extends React.Component{
-    scroll(){
-        console.log(22222)
-    }
+   
     render(){
         return(
           <Fragment>
             <div className='page-wrap'>
                 {
-                this.props.movieList.map((v)=>(
+                this.props.moreList.map((v)=>(
 
                     <div className='page-item-wrap ' key={v.id}>
                     <div className="default-img-bg">
-                        <img src="https://p0.meituan.net/128.180/movie/609e45bd40346eb8b927381be8fb27a61760914.jpg "/>
-                    </div>
+                        <img src={this.$tools.ImgUrl(v.img)} alt={v.nm}/>		
+                    </div>        
                         <div className=" content">
                             <div className="m-left">
                                 <div className=" movie-title">
@@ -53,20 +51,21 @@ class The_MovieList extends React.Component{
                 ))
 
                 }
-                <ListenScroll num={200} scrollCallback={this.scroll}></ListenScroll>
+                <ListenScroll  num={100} scrollCallback={this.props.getMore.bind(this)}></ListenScroll>
             </div>
-
          </Fragment>
         )
     }
     componentDidMount(){
         this.props.getMovieList.call(this)
         this.props.getMore.call(this)
+      
+        
     }
-
+  
 }
 function mapStateToProps({The_MovieList}){
-    console.log(The_MovieList)
+    console.log(The_MovieList.moreList)
     return{
         movieList: The_MovieList.movieList,
         moreList: The_MovieList.moreList
