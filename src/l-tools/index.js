@@ -35,7 +35,7 @@ export default class ListenScroll extends React.Component {
         let scrollHeight = document.querySelector(".page-wrap").scrollHeight;//元素总高度
         // 距离页面底部的高度
         const height = scrollHeight - scrollTop - clientHeight;
-        console.log(height,scrollTop, clientHeight, scrollHeight)
+        // console.log(height,scrollTop, clientHeight, scrollHeight)
        
         // 判断距离页面底部的高度
         if (height <= (this.props.num || 0)) {

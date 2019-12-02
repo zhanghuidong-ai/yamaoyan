@@ -19,6 +19,7 @@
 }
 .default-img-bg img{
     height: 100%;
+    width: 128px;
 }
 .content{
     height: 176px;

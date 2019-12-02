@@ -44,12 +44,14 @@ export default {
                 // console.log(num)
                if( num-1>=k){
                   var str= arr[k].join(',')//通过滚动条滚动触发 k值+1
-                  this.$axios.get('ajax/moreComingList'+'?'+"movieIds="+str) 
+                  this.$axios.get(
+                      'ajax/moreComingList'+'?'+"movieIds="+str
+                      ) 
                   .then(({data})=>{
                       dispatch(upMoreList({
                           comingList:data.coming,
                       }))
-                          console.log(56666,data.coming)
+                        //   console.log(56666,data.coming)
                     })
                    
                } 
