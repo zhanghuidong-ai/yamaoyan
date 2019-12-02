@@ -7,7 +7,7 @@ class CinemaList extends React.Component {
 	render(props) {
         console.log(this.props.cinemaList)
         return (
-            <div className="cinema-list">
+            <div className="cinema-list connect">
                 <div className="list-wrap">
                     {
                         this.props.cinemaList ?

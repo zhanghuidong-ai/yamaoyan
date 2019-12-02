@@ -1,0 +1,126 @@
+.need-slip-bg {
+    background: rgba(0,0,0,.7);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 998;
+}
+.need-slip-wrapper {
+    position: fixed;
+    left: 80px;
+    right: 80px;
+    top: 0;
+    background: rgba(0,0,0,0);
+    z-index: 999;
+    height: 100%;
+}
+.yoda-slider-wrapper {
+    width: 85% !important;
+}
+.yoda-slider-tip {
+    position: fixed;
+    width: 60%;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 10%;
+    display: none;
+    padding: 26px 52.5px;
+    border-radius: 4px;
+    background: #000;
+    opacity: .6;
+    color: #fff;
+    z-index: 4;
+    font-size: 16px;
+    text-align: center;
+}
+.yoda-slider-wrapper {
+    font-size: 16px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
+    width: 100%;
+    border: none;
+    border-radius: 8px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background: #f2f2f2;
+    text-align: center;
+}
+.yoda-slider-wrapper .sliderTitle {
+    font-size: 36px;
+    color: #030303;
+    margin: 63.75px 0 53.125px;
+    text-align: center;
+}
+.yoda-slider-wrapper .boxWrapper {
+    position: relative;
+    width: 90%;
+    font-size: 16px;
+    margin: 0 auto 75px;
+    height: 75px;
+    border-radius: 6px;
+    background: #d4d4d4;
+}
+.yoda-slider-wrapper .boxWrapper:before {
+    left: 88px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    content: ' ';
+    position: absolute;
+    display: block;
+    width: 80px;
+    height: 34px;
+    border: 1px solid transparent;
+    line-height: 49px;
+    color: #fff;
+    font-size: 60px;
+    background: url(https://s3plus.sankuai.com/v1/mss_f231eb419c414559a1837748d11d4312/yoda-resources/slider/m_arrow.png) no-repeat right center;
+    background-size: 70px;
+}
+.yoda-slider-wrapper .boxStatic {
+    position: absolute;
+    z-index: 11;
+    left: 0;
+    margin: 0;
+    width: 75px;
+    height: 75px;
+    border: 0;
+    border-radius: 6px;
+    box-shadow: 0 0 8px 0 rgba(54,54,54,.18);
+    cursor: move;
+    background: #fff url(https://s3plus.sankuai.com/v1/mss_f231eb419c414559a1837748d11d4312/yoda-resources/slider/m_key.png) no-repeat center center;
+    background-size:40px;
+}
+.yoda-slider-wrapper .moveingBar {
+    position: absolute;
+    z-index: 10;
+    width: 25.5px;
+    height: 75px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(135deg,#fcd000 0,#fcd000 100%);
+    background-size: 34px 34px;
+}
+.yoda-slider-wrapper .boxWrapper:after {
+    content: ' ';
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    width: 85px;
+    height: 76px;
+    border: 1px solid transparent;
+    border-radius: 6px;
+    color: #fff;
+    background: url(https://s3plus.sankuai.com/v1/mss_f231eb419c414559a1837748d11d4312/yoda-resources/slider/m_unlock.png) no-repeat center;
+    background-size: 35px;
+}

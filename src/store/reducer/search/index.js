@@ -7,6 +7,5 @@ export default (state=SearchInit,{type,payload})=>{
 		state.movies = payload.movies
 
 	}
-	console.log(state)
 	return state
 }

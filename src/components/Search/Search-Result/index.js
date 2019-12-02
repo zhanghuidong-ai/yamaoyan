@@ -3,11 +3,11 @@ import {
 	withRouter,
 } from "react-router-dom"
 class SearchResult extends React.Component {
+
 	render() {
 		const moviesList = this.props.moviesList.list || []
 		const cinemasList = this.props.cinemasList.list ||[]
 		const cinemasLists= cinemasList.splice(0,3)
-		console.log(this.props)
 		return (
 			<div className="search-result"  >
 				<div className="result-wrapper" style={{ "display": moviesList.length > 0 ? "block" : "none" }}>
@@ -15,9 +15,9 @@ class SearchResult extends React.Component {
 						<h3>电影/电视/综艺</h3>
 						{
 							moviesList.map((v) => (
-								<div key={v.id} className="list"  >
+								<div key={v.id} className="search-list"  >
 									<div className="movie" onClick={()=>this.props.history.push({pathname:"/movieDetail/"+v.id})}>
-										<img className="poster" src={this.$tools.ImgUrl(v.img)} alt={v.nm} />
+										<img className="poster" src={this.$tools.ImgUrl(v.img,"128","180")} alt={v.nm} />
 										<div className="info">
 											<div className="name-score">
 												<p className="name ellipsis">
@@ -46,7 +46,7 @@ class SearchResult extends React.Component {
 						<h3>影院</h3>
 							{
 								cinemasLists.map((v)=>(
-									<div key={v.id} className="list">
+									<div key={v.id} className="search-list">
 									<div className="cinema" onClick={()=>this.props.history.push({pathname:"/cinemaDetail/"+v.id})}>
 										<div className="cinema-info">
 											<div className="name-price">

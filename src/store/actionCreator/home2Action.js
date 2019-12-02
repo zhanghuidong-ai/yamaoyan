@@ -16,6 +16,14 @@ export default {
 			}
 		}
 	},
+	changedisable(info){
+		return {
+			type:"CHANGEDISABLE",
+			payload:{
+				info
+			}
+		}
+	},
 	goback(bool){
 		return {
 			type:"TAB_GOBACK",

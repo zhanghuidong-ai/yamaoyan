@@ -1,3 +1,4 @@
+
 import React from "react"
 import axios from 'axios'
 import Header from '../components/Header.js'
@@ -19,5 +20,4 @@ export default class CinemaDetail extends React.Component{
 		// console.log(111,this.props.location.state.id)
 		pubsub.publish("cinemaId",this.props.location.state.id)	
 	}
-	
 }
