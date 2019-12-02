@@ -14,7 +14,7 @@ export default class My extends Component{
 	render(){
 		return (
 			<div>
-			  <div>
+			  <div style={{position:'fixed',zIndex:'100',width:'100%',top:'0'}}>
 				<div style={{height:'40px',textAlign:'center',lineHeight:'40px',background:'red',color:'#fff',fontSize:'15px'}}>影院</div>
 				<div style={{height:'40px',textAlign:'center',lineHeight:'40px',background:'#f5f5f5'}}>
 				<span>北京</span>
@@ -22,7 +22,9 @@ export default class My extends Component{
 				</div>
 				<SearchCinema></SearchCinema>
 			  </div>
+			  <div style={{marginTop:'120px'}}>
 				<CinemaList {...this.state}></CinemaList>
+			  </div>
 			</div>
 		)
 	}

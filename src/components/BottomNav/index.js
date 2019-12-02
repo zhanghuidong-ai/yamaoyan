@@ -20,7 +20,7 @@ class BottomNav extends React.Component{
 					</NavLink>
 					<NavLink to={"/cinema"} activeClassName={"App-active"} className="nav-icon-wrapper">
 						<span className="nav-icons">
-							<i className="iconfont icon-yingyuan" ></i>
+							<i className="iconfont icon-yingyuan" ></i> 
 						</span>
 						<span className="nav-text" >影院</span>
 					</NavLink>

@@ -11,14 +11,15 @@ import Search from "./components/Search"
 // import Cinema from "./views/Cinema";
 import MovieDetail from "./views/MovieDetail"
 import CinemaDetail from "./views/CinemaDetail"
+
 function App() {
   return (
     <div className="App">
       <Switch>
 		    <Route path={"/home2"} component={Home2}></Route>
 		    <Route path={"/search"} component={Search}></Route>
-        <Route path={"/movieDetail/:movieId"} component={MovieDetail}></Route>
-		    <Route path={"/cinemaDetail/:cinemaId"} component={CinemaDetail}></Route>
+            <Route path={"/movieDetail/:movieId"} component={MovieDetail}></Route>
+		    <Route path={"/cinemaDetail"} component={CinemaDetail}></Route>
 			<Route path={"/"}  component={Home}></Route>
       </Switch>
     </div>
