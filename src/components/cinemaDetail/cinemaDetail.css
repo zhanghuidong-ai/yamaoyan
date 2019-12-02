@@ -1,0 +1,97 @@
+.body-wrap>div {
+    background-color: #fff;
+}
+.cinema-info{
+	    position: relative;
+	    padding: 15px;
+	    padding-right: 100px;
+}
+.cinema-info .title{
+	    font-size: 17px;
+	    line-height: 24px;
+	    font-weight: 700;
+	    color: #333;
+}
+.line-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.line-ellipsis {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+.cinema-info .location-icon {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    width: 70px;
+    height: 31px;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+    border-left: 1px solid #d8d8d8;
+    text-align: center;
+}
+.cinema-info .location {
+    margin-top: 2px;
+    font-size: 13px;
+    line-height: 18.5px;
+    color: #999;
+}
+.movie-info {
+    padding: 11px 15px;
+    text-align: center;
+}
+.movie-info .movie-title {
+    height: 24px;
+    line-height: 24px;
+    font-size: 17px;
+    color: #333;
+    font-weight: 700;
+}
+.movie-info .movie-desc {
+    margin-top: 2px;
+    height: 18.5px;
+    line-height: 18.5px;
+    font-size: 13px;
+    color: #999;
+}
+.movie-info .movie-title .grade {
+    color: #ffb400;
+    font-size: 16px;
+}
+.movie-info .movie-title .grade .small {
+    font-size: 10px;
+}
+.body .nav-wrap {
+    position: relative;
+}
+
+.nav-block .nav-bar .nav-bar-wrap {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: -20px;
+    padding-bottom: 20px;
+    overflow: auto;
+    -webkit-overflow-scrolling: touch;
+}
+.nav-block .nav-bar .nav-item:first-child {
+    margin-left: 15px;
+}
+.nav-block .nav-bar .nav-item {
+    display: inline-block;
+    line-height: 45px;
+    height: 45px;
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+.nav-block .nav-bar {
+    position: relative;
+    height: 45px;
+    overflow: hidden;
+    white-space: nowrap;
+}

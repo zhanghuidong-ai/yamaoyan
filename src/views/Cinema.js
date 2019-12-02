@@ -13,7 +13,9 @@ export default class My extends Component{
 	}
 	render(){
 		return (
-			<Fragment>
+			<div>
+			  <div style={{position:'fixed',zIndex:'100',width:'100%',top:'0'}}>
+				<div style={{height:'40px',textAlign:'center',lineHeight:'40px',background:'red',color:'#fff',fontSize:'15px'}}>影院</div>
 				<header className="header-nav">
 					<div className="nav_header">
 						<h1>影院</h1>
@@ -24,9 +26,13 @@ export default class My extends Component{
 				<input  style={{margin:'0 15px',height: '28px',width:'280px',textAlign:'center',alignItems: 'center',border:' .5px solid #e6e6e6',borderRadius: '5px'}} type='text' placeholder='搜影院' />
 				</div>
 				<SearchCinema></SearchCinema>
-
+			  </div>
+			  <div style={{marginTop:'120px'}}>
 				<CinemaList {...this.state}></CinemaList>
-			</Fragment>
+			  </div>
+			</div>
+
+
 		)
 	}
 	 async componentDidMount(){

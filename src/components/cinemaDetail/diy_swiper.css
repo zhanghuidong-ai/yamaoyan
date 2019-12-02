@@ -1,0 +1,11 @@
+.cinema-nav {
+    padding: 4px 0;
+    padding-left: 10px;
+    padding-right: 30px;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+}
+.wrapper-div {
+	width:67px;
+	marginLeft:20px
+}

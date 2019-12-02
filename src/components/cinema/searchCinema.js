@@ -48,7 +48,7 @@ export default class SearchCinema extends React.Component{
 					{
 						this.state.data.district.subItems.map((v,i)=>(
 							<div key={i} className={['third_list',this.state.cryshow===i?"third_list_active":""].join(' ')}   data-index={i} onClick={this.choose.bind(this)}>{v.name}
-							<div style={{position:'fixed',left:'120px',top:'128px',width:'258px',maxHeight:'380px',color:'#000',overflowY:'scroll'}}>
+							<div style={{position:'fixed',left:'120px',top:'164px',width:'258px',maxHeight:'380px',color:'#000',overflowY:'scroll'}}>
 							{	
 								
 										v.subItems?v.subItems.map(m=>(
@@ -66,7 +66,7 @@ export default class SearchCinema extends React.Component{
 					{
 						this.state.data.subway.subItems.map((v,i)=>(
 							<div key={i} className={['third_list',this.state.cryshow===i?"third_list_active":""].join(' ')} data-index={i} onClick={this.choose.bind(this)}>{v.name}
-							<div style={{position:'fixed',left:'120px',top:'128px',width:'258px',maxHeight:'380px',color:'#000',overflowY:'scroll'}}>
+							<div style={{position:'fixed',left:'120px',top:'164px',width:'258px',maxHeight:'380px',color:'#000',overflowY:'scroll'}}>
 							{									
 										v.subItems?v.subItems.map(m=>(
 													<div key={m.id} style={{display:this.state.cryshow===i?"block":"none",zIndex:2,background:'rgb(245,245,245)'}} onClick={this.search.bind(this,{stationId:m.id})}>{m.name}</div>

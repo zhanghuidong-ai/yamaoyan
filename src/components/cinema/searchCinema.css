@@ -1,7 +1,9 @@
-
+.searchCinema{
+		background:#fff;
+}
 .searchNav{
 	display:flex;
-	
+
 }
 
 	
@@ -11,18 +13,19 @@
 .searchNav div{
 	flex:1;
 	text-align:center;
-	line-height:40px;
-	font-size:13px;
+	line-height:80px;
+	font-size:26px;
 	postion:relative;
 }
 .drop{
 	display: inline-block;
 	position: absolute;
-	border: 4px solid transparent;
-	margin-left: 4px;
+	border: 8px solid transparent;
+	margin-left: 8px;
 	height: 0;
 	width:0;
-	top:18px;
+	top:200px;
+	z-index:1000;
 	border-top-color:#ccc;
 }
 .drop_active{
@@ -31,14 +34,14 @@
 }
 .second_Nav{
 	display:flex;
-	font-size:15px;
+	font-size:30px;
 	
 }
 .second_Nav div{
 	flex:1;
 	text-align:center;
-	line-height:44px;
-	padding:0 10px;
+	line-height:88px;
+	padding:0 20px;
 }
 .second_Nav_active{
 	color:#f03d37;
@@ -46,10 +49,10 @@
 }
 
 .third_list{
-	height:90px;
-	line-height:80px;
-	font-size:14px;
-	padding-left:10px;
+	height:110px;
+	line-height:100px;
+	font-size:28px;
+	padding-left:20px;
 	white-space: nowrap;
 }
 .third_list_active{
@@ -57,9 +60,9 @@
 	background:rgb(245,245,245);
 }
 .brand_list{
-	font-size:15px;
+	font-size:30px;
 	color:#333;
-	line-height:80px;
+	line-height:100px;
 	padding:0 20px;
 	border-bottom:1px solid rgb(245,245,245);
 }
@@ -71,6 +74,6 @@
 	text-align:center;
 	margin:10px;
 	border:1px solid #ccc;
-	border-radius:5px
+	border-radius:10px
 }
 

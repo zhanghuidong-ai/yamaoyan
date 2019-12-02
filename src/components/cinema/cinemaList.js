@@ -1,5 +1,8 @@
 import React from 'react'
 import "./cinemaList.css"
+import {
+    withRouter
+} from "react-router-dom"
 class CinemaList extends React.Component {    
 	render(props) {
         console.log(this.props.cinemaList)
@@ -9,7 +12,7 @@ class CinemaList extends React.Component {
                     {
                         this.props.cinemaList ?
                             this.props.cinemaList.map(v =>
-                                    <div className="item" key={v.id}>
+                                    <div className="item" key={v.id} onClick={this.getdetail.bind(this,v.id)}>
                                         <div className="title-block">
                                             <div className="title-label">
                                                 <span>{v.nm}</span>
@@ -46,4 +49,8 @@ class CinemaList extends React.Component {
             </div>
         )
     }
-}export default CinemaList
+	getdetail(cinemaid){
+		// console.log(cinemaid)
+		this.props.history.push({pathname:'/cinemaDetail/',state:{id:cinemaid}})
+	}
+}export default  withRouter(CinemaList)
