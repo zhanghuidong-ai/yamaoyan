@@ -45,7 +45,7 @@ export default {
                if( num-1>=k){
                   var str= arr[k].join(',')//通过滚动条滚动触发 k值+1
                   this.$axios.get(
-                      'ajax/moreComingList'+'?'+"movieIds="+str
+                      'ajax/moreComingList'+'?token=&'+"movieIds="+str
                       ) 
                   .then(({data})=>{
                       dispatch(upMoreList({
