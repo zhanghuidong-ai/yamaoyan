@@ -9,7 +9,7 @@ export default class CinemaDetail extends React.Component{
 
 	render(){
 		return(
-			<div>
+			<div className='page-wrap'>
 				<Header></Header>
 				<DownloadAppBar></DownloadAppBar>
 				<DetailBody></DetailBody>

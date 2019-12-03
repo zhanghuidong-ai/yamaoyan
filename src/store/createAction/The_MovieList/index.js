@@ -39,7 +39,6 @@ export default {
                     for(let i = 0;i<movieIds.length;i+=10){
                          arr.push(movieIds.slice(i,i+10))
                      }
-           
                 var num =(movieIds.length%10===0? Math.floor(movieIds.length)/10 : Math.floor(movieIds.length/10)+1)||0
                 // console.log(num)
                if( num-1>=k){

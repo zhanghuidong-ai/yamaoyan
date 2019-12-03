@@ -7,16 +7,15 @@ import ListenScroll from '../l-tools'
 class The_MovieList extends React.Component{
    
     render(){
+        console.log(this.props.location.query)
         return(
           <Fragment>
             <div className='page-wrap'>
                 {
-
                 this.props.movieList
-        
                 .map((v)=>(
 
-                    <div className='page-item-wrap ' key={v.id}  onClick={()=>this.props.history.push({pathname:'/movieDetail/'+v.id})}>
+                    <div className='page-item-wrap ' key={v.id}  onClick={()=>this.props.history.push({pathname:'/movieDetail/'+v.id+'/cityId/'+this.props.location.query.id})}>
                     <div className="default-img-bg">
                         <img src={this.$tools.ImgUrl(v.img,'128','180')} alt={v.nm}/>		
                     </div>        
@@ -55,9 +54,9 @@ class The_MovieList extends React.Component{
             }
                 {this.props.moreList
         
-                .map((v)=>(
-
-                    <div className='page-item-wrap ' key={v.id} onClick={()=>this.props.history.push({pathname:'/movieDetail/'+v.id})}>
+        .map((v)=>(
+            
+            <div className='page-item-wrap ' key={v.id} onClick={()=>this.props.history.push({pathname:'/movieDetail/'+v.id+'cityId'+this.props.location.query.id})}>
                     <div className="default-img-bg">
                         <img src={this.$tools.ImgUrl(v.img,'128','180')} alt={v.nm}/>		
                     </div>        
@@ -94,8 +93,8 @@ class The_MovieList extends React.Component{
                 </div>
                 ))}
    
+            <ListenScroll  num={100} scrollCallback={this.props.getMore.bind(this)}></ListenScroll>
                 
-                <ListenScroll  num={100} scrollCallback={this.props.getMore.bind(this)}></ListenScroll>
             </div>
          </Fragment>
         )
@@ -103,10 +102,10 @@ class The_MovieList extends React.Component{
     componentDidMount(){
         this.props.getMovieList.call(this)
         // this.props.getMore.call(this)
-      
+        
         
     }
-  
+    
 }
 function mapStateToProps({The_MovieList}){
     // console.log(The_MovieList.moreList)

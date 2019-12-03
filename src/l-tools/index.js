@@ -12,18 +12,18 @@ export default class ListenScroll extends React.Component {
         this.bindScroll = this.bindScroll.bind(this);
     }
     componentDidMount() {
-    
         document.querySelector(".page-wrap").addEventListener('scroll', ()=>this.bindScroll());
         // 挂载页面滚动监听
+        console.log('滚动监听')
     }
     componentWillUnmount() {
         // 移除页面滚动监听
-        document.querySelector(".page-wrap").removeEventListener('scroll', this.bindScroll.bind(this));
-        
+        document.querySelector(".page-wrap").removeEventListener('scroll', this.bindScroll());
+        console.log('滚动监听yichu')
     }
     render() {
         return (
-            <div />
+            <i/>
         )
     }
 
@@ -56,9 +56,7 @@ export default class ListenScroll extends React.Component {
                 codeType: true
             });
         }
-        // console.log(this.props)
-        // this.props.num<=document.querySelector('.page-wrap').scrollTop ? document.querySelector(('.download-app-bar')[0].style.display='none'):document.querySelector(('.download-app-bar')[0].style.display='flex')
-        // console.log(document.querySelector('.download-app-bar').style.display)
+       
     }
 }
 

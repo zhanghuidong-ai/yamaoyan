@@ -107,7 +107,7 @@ class CityList extends React.Component {
 		}
 	}
 	//切换
-	tabCity(id,cityNm){
+	tabCity(id=1,cityNm){
 
 		if(this.props.cityHistory.indexOf({"id":id,"cityNm":cityNm}) === -1){
 			if(this.props.cityHistory.length>=3){
